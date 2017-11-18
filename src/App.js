@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
 
-import Clock from './Clock';
-import CountDownClock from './CountDownClock';
-import CountDownWordClock from './CountDownWordClock';
-import ColorPicker from './ColorPicker';
-import GradientPicker from './GradientPicker';
+import Clock from './Clock/';
+import CountDownClock from './CountDownClock/solution';
+import CountDownWordClock from './CountDownWordClock/solution';
+import ColorPicker from './ColorPicker/solution';
+import GradientPicker from './GradientPicker/solution';
 import CustomGradientPicker from './CustomGradientPicker';
 
 class App extends Component {
   state = {
-    background: 'steelblue',
+  //  background: 'steelblue',
+    background: 'magenta',
   };
 
   render() {
@@ -24,11 +25,21 @@ class App extends Component {
           height: '100vh',
         }}
       >
-        <Clock />
-        <CountDownClock />
-        <CountDownWordClock />
-        <ColorPicker />
-        <GradientPicker />
+        <Clock from={10000}/>
+        <CountDownClock from={10000}/>
+        <CountDownWordClock from={10000}/>
+        <ColorPicker 
+            label="pick background" 
+            onSelect={background => {
+              this.setState({ background } );
+            }}
+        />
+        <GradientPicker 
+            label="pick background" 
+            onSelect={background => {
+              this.setState({ background } );
+            }}
+        />
         <CustomGradientPicker />
       </div>
     );

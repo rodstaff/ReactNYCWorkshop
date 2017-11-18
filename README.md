@@ -1,5 +1,7 @@
 # React Lightning Workshop
 
+Note:  Cloned Novermber 17, 2017
+
 React Lightning Workshop is a series of small workshops focused on familiarizing React developers with the process of creating simple, composable, and reusable UI components.  In each workshop, we challenge attendees with the task of creating a React component that represents some commonly used piece of UI, like a menu or a login widget.
 
 Throughout the workshop, we provide various use cases to try your component against.  Will your solution account for a wide range of use cases? Does it need to? The more user experiences we build with React, the more we find ourselves reaching for the same components over and over, only to tweak them to account for differing visual outputs.
