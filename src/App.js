@@ -25,9 +25,9 @@ class App extends Component {
           height: '100vh',
         }}
       >
-        <Clock from={10000}/>
-        <CountDownClock from={10000}/>
-        <CountDownWordClock from={10000}/>
+        <Clock/>
+        <CountDownClock from={2000}/>
+        <CountDownWordClock from={2000}/>
         <ColorPicker 
             label="pick background" 
             onSelect={background => {
